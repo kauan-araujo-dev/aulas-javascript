@@ -1,3 +1,15 @@
+// Habilitando o modo estrito
+'use strict';
+
+//Modo estrito aponta que está errado
+// teste = "Senac"
+let teste = "Senac";
+console.log(teste);
+
+// Não pode usar palavra reservada
+// let interface = "Teste";
+let userInterface = "Teste"
+console.log(userInterface)
 /* Exercícios */
 // 1) Crie uma variável chamada "uc" e coloque nela o número da UC que estamos
 
