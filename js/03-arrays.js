@@ -14,3 +14,14 @@ let seiLa = 6;
 const coisas = [10, "Senac", "<h2>", seiLa, 15.88];
 console.log(coisas[1]);
 console.log(coisas[4]);
+
+
+/* Exercícios (FAÇA AQUI MESMO!) */
+
+// 1) Crie um array contendo o nome de 7 coisas que vc gosta (exemplos: artistas, músicas, livros, comida... sei lá, inventa!)
+
+// 2) Em seguida, mostre no console uma frase personalizada indicando o segundo, o quinto e o sétimo elemento do array. Use concatenação e/ou template string.
+
+const pokemons = ["Charizard", "Blastoise", "Mewtwo", "Butterfly", "Pikachu", "Snorlax", "Drogonite"];
+
+console.log(`Para essa batalha eu escolho: \n${pokemons[1]} do tipo água!\n${pokemons[4]} do tipo raio!\n${pokemons[6]} do tipo normal!`)
