@@ -24,4 +24,16 @@ console.log(coisas[4]);
 
 const pokemons = ["Charizard", "Blastoise", "Mewtwo", "Butterfly", "Pikachu", "Snorlax", "Drogonite"];
 
-console.log(`Para essa batalha eu escolho: \n${pokemons[1]} do tipo água!\n${pokemons[4]} do tipo raio!\n${pokemons[6]} do tipo normal!`)
+console.log(`Para essa batalha eu escolho: \n${pokemons[1]} do tipo água!\n${pokemons[4]} do tipo raio!\n${pokemons[6]} do tipo normal!`);
+
+/* Array como MATRIZ DE 2 DIMENSÕES  */
+
+const tecnologias = [
+    ["HTML" , "CSS", "JAVASCRIPT"],
+    ["Figma", "Photoshop"],
+    ["PHP", "Node.js", "SQL", "Express"]
+];
+
+console.log(tecnologias[0][2]); //JavaScript
+console.log(tecnologias[1][0]); //Figma
+console.log(tecnologias[2][3]);
