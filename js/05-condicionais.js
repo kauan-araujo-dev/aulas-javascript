@@ -47,7 +47,7 @@ if(media >= 7){
  - Média abaixo 5? péssimo
 */
 
-media = 10;
+media = 7;
 
 if(media > 9){
     console.log("ÓTIMO");
@@ -58,3 +58,9 @@ if(media > 9){
 }else{
     console.log("PÉSSIMO")
 }
+
+console.log("\nExemplo 4");
+
+/* Condicional COMPOSTA com operador TERNÁRIO */
+let situacao = idade >= 18 ? "maior" : "menor";
+console.log(situacao);
