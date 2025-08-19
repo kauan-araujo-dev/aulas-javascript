@@ -1,3 +1,9 @@
 "use strict"
 
-console.log(133);
+console.log("Exemplo 1");
+
+let numero = 50;
+
+if(numero >= 10){
+    console.log("Se vc está vendo essa mensagem é porque a condição é verdadeira!");
+}
