@@ -83,3 +83,10 @@ if(idade >= 18 && temCarta === true){
 }else{
     console.log("Não pode dirigir")
 }
+
+/* Sobre duplo e triplo sinal de igual */
+let a = 10;
+let b = '10';
+let resultadoComparacao = a === b; //FALSE
+// resultadoComparacao = a == b;
+console.log(resultadoComparacao)
