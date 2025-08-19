@@ -74,7 +74,7 @@ const aluno = {
     listaDeTelefones: ["(11)2555-5555", "(11)99999-9999"],
     endereco: {
         rua: "Amador Bueno",
-        numero: 23,
+    numero: "23",
         bairro: "Penha"
     }
 }
