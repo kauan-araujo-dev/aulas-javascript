@@ -64,3 +64,22 @@ console.log("\nExemplo 4");
 /* Condicional COMPOSTA com operador TERNÁRIO */
 let situacao = idade >= 18 ? "maior" : "menor";
 console.log(situacao);
+
+/*
+&& -> E -> AND
+|| -> OU -> OR
+&& -> NEGAÇÃO -> NOT
+
+*/
+
+//&& -> retorna TRUE se TODAS as condições forem VERDADEIRAS
+
+console.log("Exemplo")
+let idade1 = 20;
+let temCarta = true;
+
+if(idade >= 18 && temCarta === true){
+    console.log("Pode dirigir")
+}else{
+    console.log("Não pode dirigir")
+}
