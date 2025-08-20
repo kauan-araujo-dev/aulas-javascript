@@ -90,3 +90,25 @@ let b = '10';
 let resultadoComparacao = a === b; //FALSE
 // resultadoComparacao = a == b;
 console.log(resultadoComparacao)
+
+
+
+// || - > retorna VERDADEIRO se pelo menos uma das condições for VERDADEIRA
+let feriado = false;
+let fimDeSemana = false;
+
+if(feriado == true || fimDeSemana == true){
+    console.log("Não tem aula!")
+}else{
+    console.log("Tem aula")
+}
+
+// ! -> Inverte a lógica. O que é TRUE, vira FALSE. O que é FALSE, vira TRUE.
+
+// Não está vigorando (false)
+let blackFriday = false;
+if(!blackFriday){
+    console.log("Preços normais")
+}else{
+    console.log("Preços com descontos")
+}
