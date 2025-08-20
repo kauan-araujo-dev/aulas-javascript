@@ -34,3 +34,16 @@ const bandas = ["Slayer", "Metallica", "Iron Maiden", "Nightwish", "Judas Priest
 for(let i = 0; i < bandas.length; i++){
     console.log(bandas[i])
 }
+/** Pecorre todo o array, acessando só os valores */
+for(const banda of bandas){
+    console.log(banda)
+}
+const livros = {
+    nome: "Harry Potter",
+    autor: "JK. Roling"
+}
+
+//Loop para objetos
+for(const livro in livros){
+    console.log(livros[livro])
+}
