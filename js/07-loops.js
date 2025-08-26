@@ -24,7 +24,7 @@ for(let j = 1; j <= 10; j++){
 }
 
 for(let k = 10; k > 1; k --){
-    console.log("K vale" + k)
+    console.log("K vale: " + k)
 }
 
 console.log("Exemplo 4: loop e array");
@@ -44,6 +44,47 @@ const livros = {
 }
 
 //Loop para objetos
-for(const livro in livros){
-    console.log(livros[livro])
+for(const prop in livros){
+    console.log(livros[prop])
+}
+
+/* Exercício */
+// 1. Faça um array chamado "clientes" contendo 3 objetos.
+ 
+// Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e uma propriedade "nome" (com os nomes dos clientes: "Dio", "Ozzy" e "Ian").
+ 
+// 2. Faça um loop (qualquer um dos que vimos) e mostre no console os dados de cada cliente conforme a seguir:
+ 
+// - Cliente: Dio, id: 1
+// - Cliente: Ozzy, id: 2
+// - Cliente: Ian, id: 3
+
+const clientes = [
+    {
+        identificador: 1,
+        nome: "Dio"
+    }, 
+    {
+        identificador: 2,
+        nome: "Ozzy"
+    },
+     {
+        identificador: 3,
+        nome: "Ian"
+    }
+];
+
+for(const objeto of clientes){
+    console.log(`- Cliente: ${objeto.nome}, id: ${objeto.identificador}`);
+}
+
+i = 0;
+
+while(i < clientes.length){
+    console.log(`- Cliente: ${clientes[i].nome}, id: ${clientes[i].identificador}`);
+    i++;
+}
+
+for (let i = 0; i< clientes.length; i++) {
+    console.log(`- Cliente: ${clientes[i].nome}, id: ${clientes[i].identificador}`);
 }
