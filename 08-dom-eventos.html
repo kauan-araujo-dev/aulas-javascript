@@ -1,56 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JavaScript - Eventos</title>
-<style>
-  .destaque{
-    background-color: red;
-    color: white;
-    padding: 0.4rem;
-    border-radius: 4px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Eventos</title>
+  <style>
+    .destaque {
+      background-color: red;
+      color: white;
+      padding: 0.4rem;
+      border-radius: 4px;
+    }
+
+    .eventoh1 {
+      text-align: center;
+    }
+
+    .modo-noturno {
+      background-color: #333;
+      color: white;
+    }
+
+    .modo-noturno a {
+      color: #c41111;
+    }
+
+    button {
+      padding: 10px;
+    }
+
+    .modo-noturno button {
+      color: #c41111;
+      border: none;
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    body {
+      transition: 0.4s;
+    }
+
+    #janelinha {
+      border-color: red;
+      border-width: 10px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+    }
+    dialog{
+      position: relative;
+    }
+    dialog button{
+      color: #fff;
+      padding: 2px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: #c41111;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      line-height: 0px;
+      cursor: pointer;
+      border-radius: 50%;
+    } 
+    dialog button:hover{
+      opacity: 0.9;
+    }
+  </style>
 
 </head>
+
 <body>
-    <h1>Eventos</h1>
-    <p>Eventos são interações/fenômenos que ocorrem na página. Ao monitorar e manipular eventos, o JS pode reagir ao que acontece.</p>
-    <hr>
+  <h1>Eventos</h1>
+  <p>Eventos são interações/fenômenos que ocorrem na página. Ao monitorar e manipular eventos, o JS pode reagir ao que
+    acontece.</p>
+  <hr>
 
-    <h2 id="exemplo01">Exemplo 01: Detectando eventos</h2>
-    <p id="mensagem01"></p>
+  <h2 id="exemplo01">Exemplo 01: Detectando eventos</h2>
+  <p id="mensagem01"></p>
 
-    <hr>
+  <hr>
 
-    <h2>Exemplo 02: Detectando "saída" do site</h2>
-    <p id="mensagem02"></p>
+  <h2>Exemplo 02: Detectando "saída" do site</h2>
+  <p id="mensagem02"></p>
+  <dialog id="janelinha">
+    <h3>Poxa. já vai embora</h3>
+    <p>😣😣</p>
+    <button>X</button>
+  </dialog>
+
+  <hr>
+
+  <h2>Exemplo 03: Modo Noturno</h2>
+  <button id="noturno">Ativar</button>
+
+  <hr>
 
 
-    <hr>
 
-    <h2>Exemplo 03: Modo Noturno</h2>
-    <button id="noturno">Ativar</button>  
+  <h2 id="referencias">Referências</h2>
+  <ul>
+    <li><b>Eloquent JavaScript:</b>
+      <a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/14-manipulando-eventos.md"
+        target="_blank">
+        Manipulando Eventos</a>
+    </li>
+    <li><b>MDN:</b>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events"
+        target="_blank">
+        Introdução a eventos
+      </a>
+    </li>
+  </ul>
 
-    <hr>
-
-
-
-    <h2>Referências</h2>
-    <ul>
-        <li><b>Eloquent JavaScript:</b> 
-   <a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/14-manipulando-eventos.md" target="_blank">
-   Manipulando Eventos</a>
-  </li>
-        <li><b>MDN:</b> 
-   <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events" target="_blank">
-   Introdução a eventos
-   </a>
-  </li>
-    </ul>
-
-   <script src="js/08-dom-eventos.js"></script>
+  <script src="js/08-dom-eventos.js"></script>
 
 </body>
+
 </html>
